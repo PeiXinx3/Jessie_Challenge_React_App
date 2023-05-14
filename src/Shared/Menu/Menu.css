@@ -1,0 +1,150 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 0%, 41%);
+  padding: 10px;
+}
+
+.navbar-brand img {
+  margin-top: 0.6rem;
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%)
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+}
+
+.has-submenu:hover>.submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu img {
+  margin-right: 0.5rem;
+}
+
+.submenu {
+  padding: 0.5rem 2rem;
+}
+
+.submenu .nav-item {
+  margin: 1rem 2rem 1rem 0.5rem;
+  width: 100%;
+}
+
+.toggle-button {
+  display: none;
+}
+
+li.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  top: 100%;
+  right: 0;
+  z-index: 1;
+  padding: 10px;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.main-button {
+  display: flex;
+  float: left;
+  margin-right: 25em;
+}
+
+@media screen and (min-width: 380px) {
+  .submenu {
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .submenu {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .navbar-nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 40%;
+    background-color: hsl(0, 0%, 98%);
+    width: 60% !important;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    text-align: left;
+  }
+
+  .toggle-button {
+    display: block !important;
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .submenu {
+    display: block;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+}

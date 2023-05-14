@@ -1,0 +1,14 @@
+.side-button {
+  display: flex;
+}
+
+@media screen and (max-width: 379px) {
+  .side-button {
+    display: block !important;
+  }
+
+  .side-button .nav-item {
+    text-align: center;
+    height: 30%;
+  }
+}

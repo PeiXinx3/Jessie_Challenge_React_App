@@ -1,0 +1,56 @@
+@media screen and (min-width: 380px) {
+  .text-field {
+    float: left;
+    margin-top: 9rem;
+  }
+
+  .label {
+    font-weight: 700;
+    font-size: 87px;
+  }
+
+  .description {
+    width: 75%;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 41%);
+    word-wrap: break-word;
+    line-height: 1.5rem;
+  }
+
+  .hero-image {
+    margin: 1rem 1rem 1rem 6rem;
+    float: right;
+    height: 40%;
+    content: url('../../public/images/image-hero-desktop.png');
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .text-field {
+    text-align: center;
+    margin-top: 20rem;
+  }
+
+  .label {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .description {
+    width: 100%;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 41%);
+    word-wrap: break-word;
+    line-height: 1.5rem;
+    font-size: 15.5px;
+  }
+
+  .hero-image {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    content: url('../../public/images/image-hero-mobile.png');
+    z-index: -1;
+  }
+}

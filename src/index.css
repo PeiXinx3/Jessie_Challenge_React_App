@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Epilogue;
+  font-style: normal;
+  src: url('https://fonts.google.com/specimen/Epilogue');
+  src: local(''),
+    url('../public/fonts/Epilogue-Regular.ttf');
+}
+
+@font-face {
+  font-family: Epilogue;
+  font-weight: 500;
+  src: url('https://fonts.google.com/specimen/Epilogue');
+  src: local(''),
+    url('../public/fonts/Epilogue-Medium.ttf');
+}
+
+@font-face {
+  font-family: Epilogue;
+  font-weight: 700;
+  src: url('https://fonts.google.com/specimen/Epilogue');
+  src: local(''),
+    url('../public/fonts/Epilogue-Bold.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: Epilogue;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 98%);
+  height: 100%;
+
+}
+
+@media screen and (min-width: 380px) {
+  body {
+    overflow: hidden;
+  }
+}

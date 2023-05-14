@@ -1,0 +1,12 @@
+@media screen and (min-width: 380px) {
+  .footer img {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .footer img {
+    margin-right: 1.5rem;
+    width: 3.8rem;
+  }
+}

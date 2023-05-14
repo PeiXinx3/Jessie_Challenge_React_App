@@ -1,0 +1,19 @@
+@media screen and (min-width: 380px) {
+  .container {
+    padding: 1rem 5rem 1rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: 100%
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    height: 100%
+  }
+}
